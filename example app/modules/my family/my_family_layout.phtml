@@ -1,0 +1,36 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>
+
+<?php echo $this->page_title;?></title>
+
+<!-- css links-->
+
+<?php classes\DHNavMenu::printMenuCSS(); ?>
+
+<!-- end css links -->
+</head>
+
+
+<body>
+<header>
+<?php echo $this->breadcrumbs;
+ classes\DHNavMenu::printMenuHTML('family_menu')
+?>
+<h6>using my_family_layout.phtml</h6>
+</header>
+
+<section id="content">
+
+
+<?php echo $this->content;?>
+
+</section>
+<footer>
+<h5>footer</h5>
+</footer>
+
+</body>
+</html>
+
